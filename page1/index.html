@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZUUM - Let Your Music Shine</title>
+    <link rel="stylesheet" href="../getstarted/assets/css/style.css">
     <style>
         /* General Styles */
         
@@ -26,7 +27,7 @@
         .hero {
             position: relative;
             height: 70vh;
-            background-image: url(/image/bg-image.jpg);
+            background-image: url(image/bg-image.jpg);
             /* Add your background image here */
             background-size: cover;
             background-position: center;
@@ -108,7 +109,7 @@
         }
         
         .image-gallery {
-            background-image: url('/image/Group-13.svg');
+            background-image: url('image/Group-13.svg');
             background-size: contain;
             /* Ensures the image scales properly */
             background-repeat: no-repeat;
@@ -576,15 +577,28 @@
 </head>
 
 <body>
+    
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-animation">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+        <img src="../getstarted/assets/img/favicon.png" alt="Loading Image" class="loading-image">
+        <b><p style="color: #fff;">Where artist and industry meet</p></b>
+    </div>
+    <div class="page-content" id="page-content">
+        
+        
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <img class="group-4" src="/image/Group 4.png" alt="ZUUM">
+            <img class="group-4" src="image/Group 4.png" alt="ZUUM">
             <p><strong>Time to let your music shine and go global</strong> </p><br>
             <p>
                 <h4>Enjoy the freedom of unlimited music uploads. Zuum helps your music get recognition it deserves and promotes it to a global audience.</h4>
             </p>
-            <button class="cta-button" id="getStartedBtn">Get Started</button>
+            <button class="cta-button" id="getStartedBtn"><a href="../getstarted/index.html" style="color: white; text-decoration: none">Get Started</button></a>
         </div>
     </section>
     <section class="music-potential">
@@ -603,7 +617,7 @@
         <h2>Core Features of Zuum</h2>
 
         <div class="feature">
-            <img src="/icons/Vector.png" alt="Upload Icon">
+            <img src="icons/Vector.png" alt="Upload Icon">
             <h3>Unlimited Music Uploads</h3>
             <p>Share as many tracks as you want with no limits.</p>
         </div>
@@ -626,16 +640,16 @@
             <p>Connect with record labels to elevate your career.</p>
         </div>
 
-        <button class="cta-button">Get started</button>
+        <button class="cta-button"><a href="../getstarted/index.html" style="color: white; text-decoration: none">Get started</button></a>
 
         <div class="feature-illustration">
-            <img src="/icons/music-schol.png" alt="Music Illustration">
+            <img src="icons/music-schol.png" alt="Music Illustration">
         </div>
     </section>
     <section class="reviews-section">
         <h2>Reviews from the community</h2>
         <div class="review-card">
-            <img src="/image/Group 7.png" alt="Reviewer Image" class="reviewer-img">
+            <img src="image/Group 7.png" alt="Reviewer Image" class="reviewer-img">
             <div class="stars">
                 ★★★★★
             </div>
@@ -650,7 +664,7 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="/image/Group 5.png" alt="Zuum Logo">
+                <img src="image/Group 5.png" alt="Zuum Logo">
             </div>
             <div class="footer-links">
                 <div class="column">
@@ -680,6 +694,7 @@
             </div>
         </div>
     </footer>
+    </div>
 
 
     <script>
@@ -690,6 +705,7 @@
             alert("Welcome to ZUUM! Let's get started.");
         });
     </script>
+    <script src="../getstarted/assets/js/script.js"></script>
 </body>
 
 </html>
